@@ -1,0 +1,571 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: tahoma;
+}
+
+:root {
+    --maincolor: #fe8a2d;
+    --secondryblack: rgb(27, 27, 27);
+    --navfont: Tahoma;
+    --hovercolor: #fd6e0e;
+}
+
+
+header {
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+header nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+header nav .logo img {
+    width: 40px;
+}
+
+header nav .logo h3 {
+    color: var(--maincolor);
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: var(--mainfont);
+}
+
+header nav .logo span {
+    color: white;
+    font-family: var(--mainfont);
+}
+
+header nav .navlinks {
+    list-style: none;
+    display: flex;
+}
+
+
+header nav ul li {
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(233, 234, 236);
+    transition: 0.5s;
+    font-family: var(--navfont);
+}
+
+header nav ul li a:hover {
+    color: var(--maincolor);
+}
+
+header .btns a {
+    text-decoration: none;
+}
+
+header .btns i {
+    font-size: 25px;
+    padding-right: 20px;
+    color: var(--maincolor);
+}
+.btns .fa-bars{
+    margin-left: 40px;
+    display: none;
+}
+header .btns i:hover {
+    color: var(--hovercolor);
+}
+
+header .btns button {
+    font-size: 15px;
+    font-family: var(--navfont);
+    background-color: var(--maincolor);
+    border-radius: 20px;
+    border: none;
+    padding: 5px 20px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header .btns button:hover {
+    background: var(--hovercolor);
+}
+
+
+/*--------------------------header over-------------------------*/
+
+
+#hero .hero-container {
+    display: flex;
+    background: linear-gradient(95deg, rgba(37, 37, 37, 1) 31%, rgba(6, 6, 6, 1) 100%);
+    height: 100vh;
+    padding: 0 10px;
+    align-items: center;
+
+}
+
+#hero .hero-container .left-hero {
+    padding-right: 60px;
+    padding-left: 50px;
+}
+
+#hero .hero-container .left-hero h1 {
+    color: #f9e3d2;
+    font-family: var(--mainfont);
+    font-size: 60px;
+    padding-bottom: 10px;
+    line-height: 100px;
+}
+
+#hero .hero-container .left-hero p {
+    font-size: 22px;
+    color: rgb(109, 109, 109);
+    padding: 0 0 20px 0;
+    font-family: var(--mainfont);
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+#hero .hero-container .left-hero button {
+    font-size: 15px;
+    font-family: var(--navfont);
+    background-color: var(--maincolor);
+    border-radius: 20px;
+    border: none;
+    padding: 5px 20px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#hero .hero-container .left-hero button:hover {
+    background: var(--hovercolor);
+}
+
+#hero .hero-container .right-hero img {
+    width: 700px;
+}
+
+
+/*---------------------------hero over---------------------------*/
+#about {
+    background-color: #f9e3d2;
+    padding: 10% 80px;
+}
+
+#about .about-container {
+    display: flex;
+    align-items: center
+}
+
+#about .about-container .left-section img {
+    width: 500px;
+    border-radius: 100%;
+}
+
+#about .about-container .right-section {
+    padding: 0 100px;
+}
+
+.about-container .right-section h2 {
+    font-size: 50px;
+    color: var(--secondryblack);
+}
+
+.about-container .right-section p {
+    font-size: 22px;
+    text-align: justify;
+    padding: 18px 0;
+    line-height: 35px;
+}
+
+.about-container .right-section span {
+    color: var(--hovercolor);
+}
+
+.about-container .right-section a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: var(--navfont);
+    background-color: var(--maincolor);
+    border-radius: 20px;
+    border: none;
+    padding: 5px 20px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about-container .right-section a:hover {
+    background: var(--hovercolor);
+}
+
+/*------------------------------About over-------------------------*/
+
+#menu {
+    background-image: url(images/blackboard.jpg);
+    padding-bottom: 5%;
+}
+
+#menu img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+#menu img:hover {
+    transform: scale(1.05);
+}
+
+#menu .imgholder {
+    border: 2px solid #f9e3d2;
+    overflow: hidden;
+}
+
+#menu .menu-heading {
+    text-align: center;
+    padding: 8% 0 5% 0;
+}
+
+#menu .menu-heading h2 {
+    font-size: 50px;
+    color: var(--maincolor);
+}
+
+#menu .menu-heading p {
+    color: rgb(151, 151, 151);
+}
+
+#menu .menu-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 80px 40px 80px;
+    justify-content: space-evenly;
+}
+
+.menu-container .order-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-container .card {
+    width: 18rem;
+    background-color: #f9e3d2;
+    overflow: hidden;
+}
+
+.menu-container .card-body {
+    padding: 10px 10px;
+}
+
+.menu-container p {
+    padding: 15px 0;
+    font-family: system-ui;
+    color: rgb(61, 61, 61);
+}
+
+.menu-container h4 {
+    font-family: "Roboto", "sans-serif";
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.menu-container .card-title {
+    font-family: "Roboto", "sans-serif";
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.menu-container .order-container {
+    padding-bottom: 6px;
+    align-items: center;
+}
+
+.menu-container .card .order-container .btn {
+    color: black;
+    font-size: 14px;
+    font-family: "Roboto", "sans-serif";
+    background-color: var(--maincolor);
+    border-radius: 20px;
+    border: none;
+    padding: 5px 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu-container .card .order-container .btn:hover {
+    background-color: var(--hovercolor);
+}
+
+
+/*--------------------------------Menu over-----------------------------*/
+
+
+#booking::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/chairspace.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(30%);
+    z-index: -1;
+}
+
+#booking .booking-head {
+    text-align: center;
+    padding: 8% 0 5% 0;
+    color: #f9e3d2;
+}
+
+#booking .booking-head h2 {
+    color: var(--maincolor);
+    font-size: 50px;
+}
+
+#booking .banner-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+#booking .banner {
+    max-width: 600px;
+    width: 100%;
+    background-color: #f9e3d2;
+    padding: 20px 30px;
+    border-radius: 20px;
+
+}
+
+.banner h2 {
+    font-size: 20px;
+    font-family: "Roboto", "sans-serif";
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.banner .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box {
+    width: 250px;
+    padding-top: 15px;
+}
+
+form .user-details .input-box input {
+    height: 35px;
+    width: 100%;
+    padding-left: 15px;
+    margin-top: 5px;
+    border: 1px solid;
+    border-radius: 20px;
+    border-color: var(--maincolor);
+    background-color: #f9e3d2;
+}
+
+form .submit-section {
+    display: flex;
+    justify-content: center;
+}
+
+form .submit-section input {
+    height: 35px;
+    width: 60%;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: var(--maincolor);
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form .submit-section input:hover {
+    background-color: var(--hovercolor);
+    transform: scale(1.01);
+}
+
+/*------------------------booking over--------------------------------*/
+
+.chef-section {
+    background-image: url(images/wood.jpg);
+}
+
+.chef-section img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top center;
+    transition: 0.4s;
+}
+
+.chef-section img:hover {
+    transform: scale(1.05);
+}
+
+.chef-section .chef-heading {
+    text-align: center;
+    padding: 6% 0 5% 0;
+    color: #f9e3d2;
+}
+
+.chef-section .chef-heading h2 {
+    color: var(--maincolor);
+    font-size: 50px;
+}
+
+.chef-section .container {
+    display: flex;
+    padding: 0 50px 9% 50px;
+    justify-content: space-evenly;
+}
+
+.chef-section .container .card {
+    width: 18rem;
+    background-color: #f9e3d2;
+    overflow: hidden;
+}
+
+.chef-section .container .card-body {
+    padding: 10px 15px;
+}
+
+.chef-section .container .imgholder {
+    border: 2px solid #f9e3d2;
+    overflow: hidden;
+}
+
+.chef-section .container p {
+    padding: 15px 0;
+    font-family: system-ui;
+    color: rgb(28, 27, 27);
+    text-align: justify;
+}
+
+.chef-section .container .card-title {
+    font-family: "Roboto", "sans-serif";
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.chef-section .container .order-container {
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.chef-section .container .order-container .btn {
+    color: black;
+    font-size: 12px;
+    font-family: "Roboto", "sans-serif";
+    background-color: var(--maincolor);
+    border-radius: 20px;
+    border: none;
+    padding: 5px 12px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.chef-section .container .order-container .btn:hover {
+    background-color: var(--hovercolor);
+}
+
+/*-----------------------------chef-section over---------------------------------------*/
+
+
+.footer-container {
+    background-image: url(images/art.jpg);
+    display: flex;
+    align-items: center;
+    color: var(--maincolor);
+    padding: 4%;
+    justify-content: center;
+    ;
+}
+
+.footer-container .logo-section {
+    margin-right: 50px;
+}
+
+.footer-container .logo-section img {
+    width: 100px;
+}
+
+.footer-container .footer-para {
+    max-width: 400px;
+    color: #f9e3d2;
+    padding: 20px 0;
+}
+
+.footer-container i {
+    padding: 0 10px 0 10px;
+}
+
+.footer-heading {
+    padding-bottom: 20px;
+}
+
+.footer-container ul {
+    list-style-type: none;
+    line-height: 40px;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: #f9e3d2;
+}
+
+.footer-container a:hover {
+    color: var(--maincolor);
+}
+
+.footer-container .footer-links {
+    margin-right: 50px;
+}
+
+.footer-container .footer-terms {
+    margin-right: 50px;
+}
+
+.footer-container .footer-contact {
+    margin-right: 50px;
+}
+
+.footer-container .footer-contact p {
+    padding: 14px 0;
+    color: #f9e3d2;
+}
+
+.footer-bottom {
+    padding: 15px 0;
+    text-align: center;
+    background-color: var(--maincolor);
+}
